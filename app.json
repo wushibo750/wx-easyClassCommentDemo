@@ -1,12 +1,33 @@
 {
   "pages": [
-
     "pages/index/index",
     "pages/login/login",
     "pages/test/test",
     "pages/logs/logs",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/personal/personal",
+    "pages/personInformation/personInformation",
+    "pages/mainPage/mainPage"
   ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/mainPage/mainPage",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -21,9 +42,10 @@
     "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
     "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
-    "van-field":"/miniprogram_npm/vant-weapp/field/index"
-
-
+    "van-field":"/miniprogram_npm/vant-weapp/field/index",
+    "van-tag":"/miniprogram_npm/vant-weapp/tag/index",
+    "van-nav-bar": "/miniprogram_npm/vant-weapp/nav-bar/index",
+    "van-notice-bar": "/miniprogram_npm/vant-weapp/notice-bar/index"
 }
 
 

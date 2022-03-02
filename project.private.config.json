@@ -23,6 +23,18 @@
           "pathName": "pages/login/login",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人信息",
+          "pathName": "pages/personInformation/personInformation",
+          "query": "",
+          "scene": null
         }
       ]
     }

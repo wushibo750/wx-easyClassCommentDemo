@@ -1,0 +1,22 @@
+<!--pages/personInformation/personInformation.wxml-->
+<van-notice-bar
+        left-icon="volume-o"
+        text="请保护好个人信息，以免造成经济损失。"
+/>
+<van-nav-bar
+        title="个人信息"
+        left-text="返回"
+        right-text=""
+        left-arrow
+        bind:click-left="onClickLeft"
+        bind:click-right="onClickRight"
+/>
+<van-cell-group inset>
+    <van-cell title="用户名" value="{{username}}" />
+    <van-cell title="学历" value="{{education}}" />
+    <van-cell title="所在学校" value="{{school}}" />
+    <van-cell title="QQ号" value="{{qqNum}}" />
+    <van-cell title="昵称" value="{{briefIntroduction}}" />
+    <van-cell title="职业" value="{{occupation}}" />
+</van-cell-group>
+<van-button type="primary" color="red" block bindtap="getInformation">确认获取个人信息</van-button>
