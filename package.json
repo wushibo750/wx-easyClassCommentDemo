@@ -1,0 +1,16 @@
+{
+  "name": "easyClassCommentDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vant": "^3.4.5",
+    "vant-weapp": "^0.5.29"
+  }
+}

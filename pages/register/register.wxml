@@ -1,0 +1,66 @@
+<van-cell-group>
+    <van-field
+            value="{{ sms }}"
+            center
+            clearable
+            label="图片验证码"
+            placeholder="请输入图片验证码"
+            border="{{ false }}"
+            use-button-slot
+            bind:click-cion="onCode"
+    >
+    <van-button  bindtap="checkLogin" slot="button" size="small" type="primary">
+        发送验证码
+    </van-button>
+    </van-field>
+    <view>
+        <image style=" width: 150rpx; height: 90rpx; " src="{{code}}"/>
+    </view>
+</van-cell-group>
+<van-cell-group>
+    <van-field
+            value="{{ phoneNum }}"
+            required
+            clearable
+            label="手机号+86"
+            icon="question-o"
+            placeholder="请输入手机号"
+            bind:click-icon="onClickIcon"
+            bind:change="onChangeiphonenumber"
+    />
+</van-cell-group>
+<van-cell-group>
+    <van-field
+            value="{{ phoneCode }}"
+            center
+            clearable
+            label="手机验证码"
+            placeholder="请输入手机验证码"
+            border="{{ false }}"
+            use-button-slot
+            bind:change="onChangecode"
+    >
+    <van-button  bindtap="getPhoneCode" slot="button" size="small" type="primary">
+        手机验证码
+    </van-button>
+</van-field>
+<van-field
+        value="{{ password }}"
+        type="password"
+        label="密码"
+        placeholder="请输入密码"
+        required
+        border="{{ false }}"
+        bind:change="onChangepassword"
+/>
+<van-field
+        value="{{ password_t }}"
+        type="password"
+        label="密码"
+        placeholder="请再次确认密码"
+        required
+        border="{{ false }}"
+        bind:change="onChangepassword_t"
+/>
+</van-cell-group>
+<van-button type="primary" bindtap="register">注册</van-button>
